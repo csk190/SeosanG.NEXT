@@ -345,16 +345,35 @@ st.markdown("""
   <p>궁금한 점은 언제든지 문의해주세요.</p>
   <div class="contact-grid">
     <div class="contact-item">
-      <div class="contact-label">전화</div>
-      <div class="contact-value">055-000-0000</div>
+      <div class="contact-label">대표전화</div>
+      <div class="contact-value">055-963-0305</div>
     </div>
     <div class="contact-item">
-      <div class="contact-label">이메일</div>
-      <div class="contact-value">admin@seosang.hs.kr</div>
+      <div class="contact-label">팩스</div>
+      <div class="contact-value">055-963-5380</div>
     </div>
     <div class="contact-item">
       <div class="contact-label">운영 시간</div>
       <div class="contact-value">평일 09:00 ~ 17:00</div>
+    </div>
+  </div>
+  <div style="margin-top:16px; display:flex; flex-direction:column; gap:10px;">
+    <div class="contact-item" style="text-align:left; display:flex; align-items:flex-start; gap:10px;">
+      <div style="color:#22d3ee; font-size:16px; margin-top:2px;">📍</div>
+      <div>
+        <div class="contact-label">주소</div>
+        <div class="contact-value" style="font-size:13px;">경상남도 함양군 서상면 서상로 232-1</div>
+      </div>
+    </div>
+    <div class="contact-item" style="text-align:left; display:flex; align-items:flex-start; gap:10px;">
+      <div style="color:#22d3ee; font-size:16px; margin-top:2px;">🌐</div>
+      <div>
+        <div class="contact-label">홈페이지</div>
+        <div class="contact-value" style="font-size:13px;">
+          <a href="http://seosang-h.gne.go.kr/seosang-h/main.do" target="_blank"
+             style="color:#22d3ee; text-decoration:none;">seosang-h.gne.go.kr</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
