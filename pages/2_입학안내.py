@@ -152,7 +152,7 @@ html, body, [class*="css"] {
 # ── 히어로 ────────────────────────────────────────────────────
 st.markdown("""
 <div class="hero">
-  <div class="badge">2026 Admission Guide</div>
+  <div class="badge">2027 Admission Guide</div>
   <h1>서상고등학교<br><span class="grad">입학안내</span></h1>
   <p>미래를 설계하는 첫 번째 선택.<br>
      지원 자격부터 전형 일정, 제출 서류까지 한눈에 확인하세요.</p>
@@ -164,17 +164,17 @@ st.markdown("<hr class='divider'>", unsafe_allow_html=True)
 # ── 모집 현황 ─────────────────────────────────────────────────
 st.markdown("""
 <div class="sec-header"><span style="color:#22d3ee">📊</span><h2>모집 현황</h2></div>
-<p class="sec-sub">2026학년도 신입생 모집 인원</p>
+<p class="sec-sub">2027학년도 신입생 모집 인원</p>
 <div class="info-grid">
   <div class="info-card">
     <div class="info-label">모집 학급</div>
-    <div class="info-value">3 <span style="font-size:14px;color:#64748b">학급</span></div>
+    <div class="info-value">1 <span style="font-size:14px;color:#64748b">학급</span></div>
     <div class="info-sub">일반고 과정</div>
   </div>
   <div class="info-card">
     <div class="info-label">모집 인원</div>
-    <div class="info-value">90 <span style="font-size:14px;color:#64748b">명</span></div>
-    <div class="info-sub">학급당 30명</div>
+    <div class="info-value">10명 이내</div>
+    <div class="info-sub">소인수 맞춤형 교육</div>
   </div>
   <div class="info-card">
     <div class="info-label">지원 자격</div>
@@ -212,12 +212,12 @@ st.markdown("<hr class='divider'>", unsafe_allow_html=True)
 # ── 전형 일정 ─────────────────────────────────────────────────
 st.markdown("""
 <div class="sec-header"><span style="color:#22d3ee">📅</span><h2>전형 일정</h2></div>
-<p class="sec-sub">2026학년도 신입생 전형 주요 일정</p>
+<p class="sec-sub">2027학년도 신입생 전형 주요 일정</p>
 <div class="timeline">
   <div class="tl-item">
     <div class="tl-dot"></div>
     <div class="tl-card">
-      <div class="tl-date">2025. 11. 03 (월)</div>
+      <div class="tl-date">2026. 11. 02 (월)</div>
       <div class="tl-title">원서 교부 및 접수 시작</div>
       <div class="tl-desc">학교 행정실 방문 또는 온라인 접수 가능</div>
     </div>
@@ -225,7 +225,7 @@ st.markdown("""
   <div class="tl-item">
     <div class="tl-dot" style="background:#3b82f6; box-shadow:0 0 8px #3b82f688;"></div>
     <div class="tl-card">
-      <div class="tl-date" style="color:#3b82f6">2025. 11. 14 (금)</div>
+      <div class="tl-date" style="color:#3b82f6">2026. 11. 13 (금)</div>
       <div class="tl-title">원서 접수 마감</div>
       <div class="tl-desc">마감 당일 17:00까지 — 기한 엄수</div>
     </div>
@@ -233,7 +233,7 @@ st.markdown("""
   <div class="tl-item">
     <div class="tl-dot" style="background:#a855f7; box-shadow:0 0 8px #a855f788;"></div>
     <div class="tl-card">
-      <div class="tl-date" style="color:#a855f7">2025. 12. 05 (금)</div>
+      <div class="tl-date" style="color:#a855f7">2026. 12. 04 (금)</div>
       <div class="tl-title">합격자 발표</div>
       <div class="tl-desc">학교 홈페이지 및 개별 통보</div>
     </div>
@@ -241,7 +241,7 @@ st.markdown("""
   <div class="tl-item">
     <div class="tl-dot" style="background:#10b981; box-shadow:0 0 8px #10b98188;"></div>
     <div class="tl-card">
-      <div class="tl-date" style="color:#10b981">2026. 02. 初</div>
+      <div class="tl-date" style="color:#10b981">2027. 02. 初</div>
       <div class="tl-title">입학 등록</div>
       <div class="tl-desc">합격자 등록금 납부 및 서류 제출</div>
     </div>
@@ -249,7 +249,7 @@ st.markdown("""
   <div class="tl-item">
     <div class="tl-dot" style="background:#f59e0b; box-shadow:0 0 8px #f59e0b88;"></div>
     <div class="tl-card">
-      <div class="tl-date" style="color:#f59e0b">2026. 03. 02 (월)</div>
+      <div class="tl-date" style="color:#f59e0b">2027. 03. 02 (월)</div>
       <div class="tl-title">입학식</div>
       <div class="tl-desc">서상고등학교 대강당 — 09:00</div>
     </div>
@@ -365,9 +365,8 @@ st.markdown("<hr class='divider'>", unsafe_allow_html=True)
 # ── CTA ────────────────────────────────────────────────────────
 st.markdown("""
 <div class="cta-wrap">
-  <div class="cta-pill">2026 지금 바로 신청</div>
+  <div class="cta-pill">2027 지금 바로 신청</div>
   <h2>미래를 가장 먼저 경험하는 학교,<br>서상고등학교에서 만나요.</h2>
   <p style="margin-top:12px; color:#94a3b8">원서 접수 마감까지 D-Day를 놓치지 마세요!</p>
 </div>
 """, unsafe_allow_html=True)
-
