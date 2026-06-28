@@ -1,4 +1,6 @@
 import streamlit as st
+import os
+from pathlib import Path
 
 st.set_page_config(
     page_title="서상고등학교",
@@ -7,19 +9,14 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# 페이지 정의 (파일 경로는 실제 파일명에 맞게 수정)
-pages = {
-    "서상고등학교 메뉴": [
-        st.Page("pages/1_홈페이지.py", title="🏠 홈페이지"),
-        st.Page("pages/2_학교소개.py", title="🏫 학교소개"),
-        st.Page("pages/3_입학안내.py", title="📋 입학안내"),
-        # 나머지 페이지들 추가
-    ]
-}
+# pages/ 폴더 안의 파일을 자동으로 읽어서 등록
+pages_dir = Path("pages")
+page_files = sorted(pages_dir.glob("*.py"))  # 이름순 정렬
 
-pg = st.navigation(pages)
+pages_list = [st.Page(str(f), title=f.stem.split("_", 1)[-1]) for f in page_files]
 
-# 사이드바 추가 정보
+pg = st.navigation({"서상고등학교 메뉴": pages_list})
+
 with st.sidebar:
     st.divider()
     st.caption("2026학년도 신입생 모집 중")
