@@ -217,23 +217,23 @@ st.markdown("""
   <div class="tl-item">
     <div class="tl-dot"></div>
     <div class="tl-card">
-      <div class="tl-date">2026. 11. 02 (월)</div>
-      <div class="tl-title">원서 교부 및 접수 시작</div>
-      <div class="tl-desc">학교 행정실 방문 또는 온라인 접수 가능</div>
+      <div class="tl-date">2026. 12. 10 (목) ~ 12. 14 (월)</div>
+      <div class="tl-title">원서 접수</div>
+      <div class="tl-desc">학교 행정실 방문 또는 온라인 접수 — 마감일 17:00까지</div>
     </div>
   </div>
   <div class="tl-item">
     <div class="tl-dot" style="background:#3b82f6; box-shadow:0 0 8px #3b82f688;"></div>
     <div class="tl-card">
-      <div class="tl-date" style="color:#3b82f6">2026. 11. 13 (금)</div>
-      <div class="tl-title">원서 접수 마감</div>
-      <div class="tl-desc">마감 당일 17:00까지 — 기한 엄수</div>
+      <div class="tl-date" style="color:#3b82f6">2026. 12. 15 (화) ~ 12. 23 (수)</div>
+      <div class="tl-title">전형 실시</div>
+      <div class="tl-desc">서류 심사 및 학교별 전형 진행</div>
     </div>
   </div>
   <div class="tl-item">
     <div class="tl-dot" style="background:#a855f7; box-shadow:0 0 8px #a855f788;"></div>
     <div class="tl-card">
-      <div class="tl-date" style="color:#a855f7">2026. 12. 04 (금)</div>
+      <div class="tl-date" style="color:#a855f7">2026. 12. 30 (수)</div>
       <div class="tl-title">합격자 발표</div>
       <div class="tl-desc">학교 홈페이지 및 개별 통보</div>
     </div>
