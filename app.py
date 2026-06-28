@@ -1,6 +1,6 @@
 import streamlit as st
-import os
 from pathlib import Path
+import ast
 
 st.set_page_config(
     page_title="서상고등학교",
@@ -9,16 +9,20 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# pages/ 폴더 안의 파일을 자동으로 읽어서 등록
 pages_dir = Path("pages")
-page_files = sorted(pages_dir.glob("*.py"))  # 이름순 정렬
+pages_list = []
 
-pages_list = [st.Page(str(f), title=f.stem.split("_", 1)[-1]) for f in page_files]
+for f in sorted(pages_dir.glob("*.py")):
+    try:
+        # 문법 오류 있는 파일은 건너뜀
+        ast.parse(f.read_text(encoding="utf-8"))
+        pages_list.append(st.Page(str(f), title=f.stem.split("_", 1)[-1]))
+    except SyntaxError as e:
+        st.sidebar.error(f"⚠️ {f.name} 오류: {e}")
 
-pg = st.navigation({"서상고등학교 메뉴": pages_list})
-
-with st.sidebar:
-    st.divider()
-    st.caption("2026학년도 신입생 모집 중")
-
-pg.run()
+if pages_list:
+    pg = st.navigation({"서상고등학교 메뉴": pages_list})
+    with st.sidebar:
+        st.divider()
+        st.caption("2026학년도 신입생 모집 중")
+    pg.run()
