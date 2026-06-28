@@ -5,7 +5,7 @@ st.markdown("""
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    header {visibility: hidden;}
+    /* header {visibility: hidden;} <- 이 줄을 삭제하여 > 버튼이 있는 상단바가 보이게 합니다 */
     .block-container {
         padding-top: 2rem;
         padding-bottom: 2rem;
