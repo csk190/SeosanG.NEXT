@@ -24,5 +24,5 @@ if pages_list:
     pg = st.navigation({"서상고등학교 메뉴": pages_list})
     with st.sidebar:
         st.divider()
-        st.caption("2026학년도 신입생 모집 중")
+        st.caption("2027학년도 신입생 모집 중")
     pg.run()
